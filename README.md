@@ -5,7 +5,7 @@ Mozilla Apps (Richiesoft Studio)
 
 I wanted to share all my works for more than six years of Studio startup & personal project for public usage. I am the founder of Richiesoft Studio where I build enormous app covering consumer, media & ad verticals. This project is one of the repo I had personally stored.
 
-This bunch contains my skeleton App structures for Ubuntu.
+This bunch contains my skeleton App structures for Firefox.
 
 # Features
 
