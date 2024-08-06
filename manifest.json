@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+
+  "name": "0bc.xyz | Chrome Extension",
+  "description": "This extension allows you to shorten Url",
+  "version": "5.2",
+  "content_scripts": [
+    {
+      "matches": [ "http://*/*", "https://*/*"],
+      "js": ["jquery-1.11.3.min.js", "shortenurl.js"]
+    }
+  ],
+"icons": {
+"16": "16x16.png",
+"48": "48x48.png",
+"128": "128x128.png"
+},
+  "browser_action": {
+    "default_icon": "ok.png",
+    "default_popup": "shorten.html"
+  },
+  
+     "commands": {
+          "_execute_browser_action": {
+            "suggested_key": {
+              "windows": "Ctrl+M",
+              "mac": "Command+M",
+              "chromeos": "Ctrl+M",
+              "linux": "Ctrl+M"
+            }
+          }
+        },
+"content_security_policy": "script-src 'self' https://connect.facebook.net; object-src 'self'",
+
+"applications": {
+  "gecko": {
+    "id": "{d5811835-82b2-4cb5-8846-d0d32fa1abac}"
+  }
+},
+
+  "permissions": [
+    "activeTab",
+    "http://localhost/0bcxyz/ShortenApi.php",
+	"http://0bc.xyz/ShortenApi.php",
+	"http://connect.facebook.net/en_US/sdk.js",
+	"https://developers.facebook.com/docs/",
+	"clipboardRead",
+	"clipboardWrite"
+  ]
+}
